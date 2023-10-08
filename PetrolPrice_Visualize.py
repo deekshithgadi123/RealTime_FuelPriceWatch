@@ -38,6 +38,7 @@ for i in range(len(df['State'])):
   else:
     plt.bar(df['State'][i], df['Petrol Price'][i],color = 'orange')
     
+  #annotation for the petrol price above the bar
   plt.text(df['State'][i], df['Petrol Price'][i] + 0.2, f'{df["Petrol Price"][i]:.2f}', ha='center')
 
 # Set labels and title for the plot
